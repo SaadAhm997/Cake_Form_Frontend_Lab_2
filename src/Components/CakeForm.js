@@ -13,17 +13,13 @@ const handleSubmit = (event) => {
     const newCake = {
         cakeName: cakeName,
         ingredients:ingredients,
-        rating:rating,
+        rating:rating
 }
 addNewCake(newCake);
 setCakeName("")
 setIngredients("")
 setRating("")
 }
-
-
-
-
 
 return (
         <div>
@@ -44,7 +40,6 @@ return (
                    placeholder="Ingredients"
                    onChange={(event) => setIngredients(event.target.value)}
                    value = {ingredients}/>
-            <textarea cols="30" rows="1" id="ingredients"></textarea>
 
 
             <label htmlFor="rating">Rating:</label>
